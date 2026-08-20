@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Telegram Inquiries | NEXUS PC</title>
+  <meta name="description" content="Connect with NEXUS PC hardware specialists, request custom quotes, inquire about wholesale parts, or chat directly on Telegram.">
+  
+  <!-- Google Fonts Preconnect & English Typography Stack -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            surface: '#15121b',
+            'surface-low': '#1d1a24',
+            'surface-container': '#221e28',
+            primary: '#d2bbff',
+            'primary-container': '#7c3aed',
+            secondary: '#4cd7f6',
+            telegram: '#24A1DE',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            mono: ['Space Grotesk', 'JetBrains Mono', 'monospace'],
+            tech: ['Orbitron', 'Rajdhani', 'Space Grotesk', 'sans-serif'],
+            display: ['Space Grotesk', 'Orbitron', 'Rajdhani', 'sans-serif'],
+            code: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            en: ['Space Grotesk', 'Inter', 'Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="tech-grid min-h-screen flex flex-col text-[#e8dfee] selection:bg-[#7c3aed] selection:text-white">
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="bg-[#100d16] border-b border-[#252D3A] py-1.5 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <span class="text-gray-300">Support Hours: Monday – Saturday (9:00 AM – 8:00 PM PST)</span>
+      <a href="https://t.me/NexusPC_Support" target="_blank" class="hover:text-[#24A1DE] transition flex items-center gap-1 text-gray-400">
+        Telegram Support: @NexusPC_Support
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION HEADER ================= -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-[#4a4455]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#7c3aed] to-[#4cd7f6] p-[2px] shadow-lg shadow-[#7c3aed]/30 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-[#15121b] rounded-[10px] flex items-center justify-center">
+            <span class="font-mono font-black text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#d2bbff] to-[#4cd7f6]">NX</span>
+          </div>
+        </div>
+        <div>
+          <span class="text-lg font-black tracking-wider text-white flex items-center gap-1 font-mono">
+            NEXUS<span class="text-[#4cd7f6]">PC</span>
+          </span>
+          <span class="block text-[10px] text-gray-400 font-medium tracking-tight">Advanced Hardware & Assembly</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+        <a href="products.html" class="text-gray-300 hover:text-white transition">Hardware Catalog</a>
+        <a href="index.html#pc-builder-section" class="text-gray-300 hover:text-[#d2bbff] transition">Custom PC Builder</a>
+        <a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a>
+        <a href="contact.html" class="text-[#4cd7f6] border-b-2 border-[#4cd7f6] pb-1 font-bold">Contact & Support</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <button onclick="openCartDrawer()" class="relative p-2.5 rounded-lg bg-[#221e28] border border-[#4a4455]/40 text-white hover:border-[#7c3aed] transition" title="Shopping Cart">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-[#7c3aed] text-white text-[11px] font-bold flex items-center justify-center font-mono">0</span>
+        </button>
+
+        <a href="https://t.me/NexusPC_Support" target="_blank" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-lg bg-[#24A1DE] text-white text-xs font-bold transition">
+          Telegram Chat
+        </a>
+
+        <button id="mobile-menu-toggle" class="md:hidden p-2.5 rounded-lg bg-[#221e28] border border-[#4a4455]/40 text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1a1722] border-b border-[#4a4455]/40 px-4 py-4 space-y-3">
+      <a href="index.html" class="block py-2 text-gray-300 hover:text-white">Home</a>
+      <a href="products.html" class="block py-2 text-gray-300 hover:text-white">Hardware Catalog</a>
+      <a href="index.html#pc-builder-section" class="block py-2 text-[#d2bbff]">Custom PC Builder</a>
+      <a href="about.html" class="block py-2 text-gray-300 hover:text-white">About Us</a>
+      <a href="contact.html" class="block py-2 text-[#4cd7f6] font-bold border-l-2 border-[#4cd7f6] pl-2">Contact & Telegram</a>
+    </div>
+  </header>
+
+  <!-- ================= CONTACT HERO ================= -->
+  <section class="py-12 bg-[#100d16]/80 border-b border-[#252D3A]">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-3">
+      <h1 class="text-2xl sm:text-3xl font-black text-white font-display">Direct Hardware Consultation & Orders</h1>
+      <p class="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto">
+        Reach out directly for custom build evaluations, wholesale component pricing, warranty inquiries, or showroom visits.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT DETAILS & FORM ================= -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      <!-- Left: Contact info channels -->
+      <div class="lg:col-span-5 space-y-6 text-left">
+        
+        <!-- Telegram Highlight Card -->
+        <div class="hud-border glass-panel rounded-2xl p-6 bg-gradient-to-br from-[#1d1a24] to-[#15121b] border border-[#24A1DE]/50 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-[#24A1DE] text-white flex items-center justify-center">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white font-display">Telegram Direct Desk (Fastest)</h3>
+              <span class="text-xs text-[#24A1DE] font-mono">@NexusPC_Support</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-300 leading-relaxed">
+            The fastest channel for real-time parts availability, custom invoices, benchmark screenshots, and promotional bundle discounts.
+          </p>
+          <a href="https://t.me/NexusPC_Support" target="_blank" class="block text-center py-2.5 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white font-bold text-xs shadow-lg shadow-[#24A1DE]/30 transition telegram-pulse">
+            Message Us on Telegram
+          </a>
+        </div>
+
+        <!-- Phone & Address -->
+        <div class="space-y-4">
+          <div class="p-4 rounded-xl bg-[#15121b] border border-[#252D3A] flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-[#7c3aed]/20 text-[#d2bbff] flex items-center justify-center flex-shrink-0 text-lg">📞</div>
+            <div>
+              <h4 class="text-xs font-bold text-white font-display">Direct Phone Lines</h4>
+              <div class="text-xs text-[#4cd7f6] font-mono mt-1">+1 (800) 555-NEXUS / +1 (408) 555-0199</div>
+              <div class="text-[11px] text-gray-400 mt-0.5">Available Mon-Sat during working hours</div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-[#15121b] border border-[#252D3A] flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-[#4cd7f6]/20 text-[#4cd7f6] flex items-center justify-center flex-shrink-0 text-lg">📍</div>
+            <div>
+              <h4 class="text-xs font-bold text-white font-display">Hardware Lab & Showroom</h4>
+              <div class="text-xs text-gray-300 mt-1 leading-relaxed">
+                Silicon Valley Hardware Hub, Suite 1104, San Jose, CA
+              </div>
+              <div class="text-[11px] text-gray-500 mt-1">In-person consultations available by appointment.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Interactive Telegram Inquiry Generator Form -->
+      <div class="lg:col-span-7 bg-[#15121b] border border-[#252D3A] rounded-2xl p-6 lg:p-8 space-y-6">
+        <div>
+          <h2 class="text-lg font-bold text-white font-display">Request a Custom Build Recommendation</h2>
+          <p class="text-xs text-gray-400 mt-1">Fill out your gaming or workstation requirements below to generate an instant Telegram consultation message:</p>
+        </div>
+
+        <form id="telegram-inquiry-form" onsubmit="handleInquirySubmit(event)" class="space-y-4 text-left">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-gray-300 mb-1">Full Name:</label>
+              <input type="text" id="inq-name" required placeholder="e.g. Alex Walker"
+                class="w-full bg-[#1d1a24] border border-[#4a4455]/40 rounded-xl py-2.5 px-3.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#7c3aed]">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-300 mb-1">Phone or Telegram Handle (Optional):</label>
+              <input type="text" id="inq-phone" placeholder="@username or +1..."
+                class="w-full bg-[#1d1a24] border border-[#4a4455]/40 rounded-xl py-2.5 px-3.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#7c3aed]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-gray-300 mb-1">Target Use Case:</label>
+              <select id="inq-usage" class="w-full bg-[#1d1a24] border border-[#4a4455]/40 rounded-xl py-2.5 px-3.5 text-xs text-gray-200 focus:outline-none focus:border-[#7c3aed]">
+                <option value="4K / 2K High FPS Gaming">4K / 2K High FPS Gaming</option>
+                <option value="3D Rendering & VFX (Unreal / Blender)">3D Rendering & VFX (Unreal / Blender)</option>
+                <option value="AI & Machine Learning Acceleration">AI & Machine Learning Acceleration</option>
+                <option value="Streaming & Content Creation">Streaming & Content Creation</option>
+                <option value="Individual Hardware Component Order">Individual Hardware Component Order</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-300 mb-1">Approximate Budget (USD):</label>
+              <input type="text" id="inq-budget" placeholder="e.g. $2,000 - $3,500"
+                class="w-full bg-[#1d1a24] border border-[#4a4455]/40 rounded-xl py-2.5 px-3.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#7c3aed]">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">Specific Components or Preferences:</label>
+            <textarea id="inq-notes" rows="4" placeholder="Mention any specific parts (e.g. RTX 5080, Ryzen 7800X3D), case aesthetics, or cooling preferences..."
+              class="w-full bg-[#1d1a24] border border-[#4a4455]/40 rounded-xl py-2.5 px-3.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#7c3aed]"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white font-bold text-xs shadow-lg shadow-[#24A1DE]/30 transition flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            Send Inquiry to Telegram Specialist
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <div class="mt-16 pt-10 border-t border-[#252D3A] max-w-4xl mx-auto space-y-6">
+      <div class="text-center mb-8">
+        <h2 class="text-xl font-bold text-white font-display">Frequently Asked Questions</h2>
+        <p class="text-xs text-gray-400 mt-1">Answers regarding shipping, warranty coverage, and custom build turnaround times.</p>
+      </div>
+
+      <div class="space-y-3 text-left">
+        
+        <div class="p-4 rounded-xl bg-[#15121b] border border-[#252D3A]">
+          <h4 class="text-xs font-bold text-[#4cd7f6] font-display">1. How are prebuilt systems and fragile components packaged for shipping?</h4>
+          <p class="text-xs text-gray-300 mt-1.5 leading-relaxed">
+            All graphics cards are secured internally with custom Instapak expanding high-density foam brackets. The entire chassis is double-boxed with impact-absorbing corners and insured for 100% of its full replacement value with tracked courier delivery.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#15121b] border border-[#252D3A]">
+          <h4 class="text-xs font-bold text-[#4cd7f6] font-display">2. What is the turnaround time for a custom commissioned build?</h4>
+          <p class="text-xs text-gray-300 mt-1.5 leading-relaxed">
+            Upon component validation, our assembly, custom cable combing, and 24-hour thermal stress-testing workflow takes between 24 to 48 hours before immediate dispatch.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#15121b] border border-[#252D3A]">
+          <h4 class="text-xs font-bold text-[#4cd7f6] font-display">3. Can I customize or swap individual parts on pre-configured rigs?</h4>
+          <p class="text-xs text-gray-300 mt-1.5 leading-relaxed">
+            Absolutely. You can use our interactive "Custom PC Builder" on the homepage or chat directly with our engineering team on Telegram to tailor any component to your exact preferences.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#100d16] border-t border-[#252D3A] pt-10 pb-8 mt-auto text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-2 font-mono font-bold text-white">
+        <span class="text-[#4cd7f6]">NEXUS</span>PC — Contact & Support
+      </div>
+      <div>© 2025 NEXUS PC Hardware Labs. All rights reserved.</div>
+      <a href="https://t.me/NexusPC_Support" target="_blank" class="text-[#24A1DE] font-mono hover:underline">@NexusPC_Support</a>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING CART DRAWER ================= -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 hidden">
+    <div onclick="closeCartDrawer()" class="cart-drawer-overlay absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 transition-opacity"></div>
+    <div class="cart-drawer-content absolute top-0 right-0 bottom-0 w-full max-w-md bg-[#15121b] border-l border-[#4a4455]/40 shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform z-10">
+      <div class="p-4 border-b border-[#4a4455]/30 flex items-center justify-between bg-[#1d1a24]">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#7c3aed]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <h3 class="text-sm font-bold text-white font-display">Your Shopping Cart</h3>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-gray-400 hover:text-white p-1" title="Close">✕</button>
+      </div>
+      <div class="flex-1 overflow-y-auto p-4 space-y-3">
+        <div id="cart-drawer-items" class="space-y-3"></div>
+        <div id="cart-drawer-empty" class="text-center py-16 hidden">
+          <div class="w-14 h-14 mx-auto rounded-full bg-[#221e28] flex items-center justify-center text-gray-500 mb-3 text-2xl">🛒</div>
+          <p class="text-xs text-gray-400">Your shopping cart is currently empty.</p>
+        </div>
+      </div>
+      <div id="cart-drawer-checkout" class="p-4 bg-[#100d16] border-t border-[#4a4455]/30 space-y-3">
+        <div class="flex items-baseline justify-between">
+          <span class="text-xs text-gray-400">Cart Total:</span>
+          <div class="text-right">
+            <div id="cart-drawer-total" class="text-base font-bold text-[#4cd7f6] font-mono">$0 USD</div>
+            <div id="cart-drawer-total-usd" class="text-[10px] text-gray-500 font-mono">0 item(s)</div>
+          </div>
+        </div>
+        <button onclick="orderCartViaTelegram()" class="w-full py-3 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white font-bold text-xs shadow-lg shadow-[#24A1DE]/30 transition flex items-center justify-center gap-2">
+          Checkout via Telegram
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+  <script>
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('inq-name').value;
+      const phone = document.getElementById('inq-phone').value || 'Not provided';
+      const usage = document.getElementById('inq-usage').value;
+      const budget = document.getElementById('inq-budget').value || 'Flexible / Unspecified';
+      const notes = document.getElementById('inq-notes').value || 'Standard inquiry';
+
+      const code = 'INQ-' + Math.floor(100000 + Math.random() * 900000);
+
+      let msg = `📩 New Custom Rig Inquiry from NEXUS PC Website\n`;
+      msg += `🔖 Tracking Code: ${code}\n`;
+      msg += `👤 Customer: ${name}\n`;
+      msg += `📞 Contact: ${phone}\n`;
+      msg += `🎯 Target Use Case: ${usage}\n`;
+      msg += `💰 Target Budget: ${budget}\n`;
+      msg += `📝 Notes & Component Requests:\n${notes}\n`;
+      msg += `───────────────────────\n`;
+      msg += `Please provide your recommended configuration and availability. Thank you!`;
+
+      const encoded = encodeURIComponent(msg);
+      window.open(`https://t.me/${NEXUS_CONFIG.telegramUser}?text=${encoded}`, '_blank');
+      showToast('Opening Telegram to send your inquiry...', 'telegram');
+    }
+  </script>
+</body>
+</html>

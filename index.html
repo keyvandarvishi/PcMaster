@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS PC | Custom Gaming Hardware & Flagship Rigs</title>
+  <meta name="description" content="Custom gaming PC builder, NVIDIA RTX 5080/4090 flagship graphics cards, AMD Ryzen 7800X3D processors, premium cooling, and instant Telegram ordering with direct consultation.">
+  
+  <!-- Google Fonts Preconnect & English Typography Stack -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN for Zero-Build Immediate GitHub Pages Deployment -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            surface: '#15121b',
+            'surface-low': '#1d1a24',
+            'surface-container': '#221e28',
+            'surface-high': '#2c2833',
+            primary: '#d2bbff',
+            'primary-container': '#7c3aed',
+            secondary: '#4cd7f6',
+            telegram: '#24A1DE',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            mono: ['Space Grotesk', 'JetBrains Mono', 'monospace'],
+            tech: ['Orbitron', 'Rajdhani', 'Space Grotesk', 'sans-serif'],
+            display: ['Space Grotesk', 'Orbitron', 'Rajdhani', 'sans-serif'],
+            code: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            en: ['Space Grotesk', 'Inter', 'Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Cyberpunk Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="tech-grid min-h-screen flex flex-col text-[#e8dfee] selection:bg-[#7c3aed] selection:text-white">
+
+  <!-- ================= TOP NOTIFICATION BAR ================= -->
+  <div class="bg-[#100d16] border-b border-[#252D3A] py-1.5 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#7c3aed]/30 text-[#d2bbff] border border-[#7c3aed]/40">NEW ARRIVAL</span>
+        <span class="text-gray-300">Next-Gen <strong class="text-[#4cd7f6] font-mono">NVIDIA RTX 5080 16GB</strong> in stock! Fast direct dispatch via Telegram</span>
+      </div>
+      <div class="flex items-center gap-4 text-gray-400">
+        <a href="https://t.me/NexusPC_Support" target="_blank" class="hover:text-[#24A1DE] transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-[#24A1DE]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          Telegram Support: @NexusPC_Support
+        </a>
+        <span class="hidden sm:inline">|</span>
+        <span class="hidden sm:inline font-mono">Hotline: +1 (800) 555-NEXUS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION HEADER ================= -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-[#4a4455]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#7c3aed] to-[#4cd7f6] p-[2px] shadow-lg shadow-[#7c3aed]/30 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-[#15121b] rounded-[10px] flex items-center justify-center">
+            <span class="font-mono font-black text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#d2bbff] to-[#4cd7f6]">NX</span>
+          </div>
+        </div>
+        <div>
+          <span class="text-lg font-black tracking-wider text-white flex items-center gap-1 font-mono">
+            NEXUS<span class="text-[#4cd7f6]">PC</span>
+          </span>
+          <span class="block text-[10px] text-gray-400 font-medium tracking-tight">Advanced Hardware & Custom Rigs</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="text-[#4cd7f6] border-b-2 border-[#4cd7f6] pb-1 font-bold">Home</a>
+        <a href="products.html" class="text-gray-300 hover:text-white transition">Hardware Catalog</a>
+        <a href="#pc-builder-section" class="text-gray-300 hover:text-[#d2bbff] transition flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#7c3aed] animate-pulse"></span>
+          Custom PC Builder
+        </a>
+        <a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a>
+        <a href="contact.html" class="text-gray-300 hover:text-white transition">Contact & Support</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Search Button / Input Trigger -->
+        <div class="relative hidden sm:block w-48 lg:w-60">
+          <input type="text" placeholder="Search (RTX 5080, Ryzen...)" 
+            class="site-search-input w-full bg-[#1d1a24] border border-[#4a4455]/40 rounded-lg py-2 pl-9 pr-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#7c3aed] transition">
+          <svg class="w-4 h-4 text-gray-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+
+        <!-- Telegram Quick CTA -->
+        <a href="https://t.me/NexusPC_Support" target="_blank" 
+          class="hidden lg:flex items-center gap-2 px-3.5 py-2 rounded-lg bg-[#24A1DE]/20 hover:bg-[#24A1DE] text-[#24A1DE] hover:text-white border border-[#24A1DE]/40 text-xs font-bold transition duration-200">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          Telegram Chat
+        </a>
+
+        <!-- Cart Button -->
+        <button onclick="openCartDrawer()" class="relative p-2.5 rounded-lg bg-[#221e28] border border-[#4a4455]/40 text-white hover:border-[#7c3aed] transition" title="Shopping Cart">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-[#7c3aed] text-white text-[11px] font-bold flex items-center justify-center font-mono">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2.5 rounded-lg bg-[#221e28] border border-[#4a4455]/40 text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1a1722] border-b border-[#4a4455]/40 px-4 py-4 space-y-3">
+      <div class="relative pb-2">
+        <input type="text" placeholder="Search hardware..." 
+          class="site-search-input w-full bg-[#15121b] border border-[#4a4455]/40 rounded-lg py-2 pl-9 pr-3 text-xs text-white placeholder-gray-500">
+        <svg class="w-4 h-4 text-gray-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      </div>
+      <a href="index.html" class="block py-2 text-[#4cd7f6] font-bold border-l-2 border-[#4cd7f6] pl-2">Home</a>
+      <a href="products.html" class="block py-2 text-gray-300 hover:text-white">Hardware Catalog</a>
+      <a href="#pc-builder-section" class="block py-2 text-[#d2bbff] hover:text-white">Custom PC Builder</a>
+      <a href="about.html" class="block py-2 text-gray-300 hover:text-white">About Us</a>
+      <a href="contact.html" class="block py-2 text-gray-300 hover:text-white">Contact & Support</a>
+      <a href="https://t.me/NexusPC_Support" target="_blank" class="block text-center py-2.5 rounded-lg bg-[#24A1DE] text-white font-bold text-xs mt-3">
+        Order & Inquire via Telegram
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative overflow-hidden py-12 lg:py-20">
+    <!-- Ambient glowing backdrops -->
+    <div class="absolute top-10 left-1/4 w-96 h-96 bg-[#7c3aed]/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-[#4cd7f6]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Hero Texts -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#221e28] border border-[#7c3aed]/50 text-xs text-[#d2bbff]">
+            <span class="w-2 h-2 rounded-full bg-[#4cd7f6] animate-ping"></span>
+            Revolutionary NVIDIA Blackwell Architecture
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight font-display">
+            The Pinnacle of Power <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4cd7f6] via-[#d2bbff] to-[#7c3aed]">
+              ASUS ROG RTX 5080 OC 16GB
+            </span>
+          </h1>
+
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Flawless 4K ray-traced gaming at 144+ FPS. Featuring 16GB ultra-fast GDDR7 VRAM, next-gen DLSS 4 AI neural reconstruction, and full official warranty coverage. Build your dream setup with instant Telegram dispatch.
+          </p>
+
+          <!-- Price & CTA Block -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <div class="bg-[#1d1a24] p-4 rounded-xl border border-[#252D3A]">
+              <div class="text-xs text-gray-400">Launch Special Price:</div>
+              <div class="text-2xl font-black text-[#4cd7f6] font-mono mt-0.5">$1,299 <span class="text-xs font-normal text-gray-400">USD</span></div>
+              <div class="text-[11px] text-gray-500 line-through font-mono">$1,449 USD</div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 flex-1">
+              <button onclick="addToCart('gpu-rtx-5080')" class="px-6 py-3.5 rounded-xl bg-[#7c3aed] hover:bg-[#9055ff] text-white font-bold text-sm shadow-lg shadow-[#7c3aed]/30 transition flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                Add to Cart
+              </button>
+
+              <button onclick="directTelegramProductOrder('gpu-rtx-5080')" class="px-6 py-3.5 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white font-bold text-sm shadow-lg shadow-[#24A1DE]/30 transition flex items-center justify-center gap-2 telegram-pulse">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                Instant Telegram Order
+              </button>
+            </div>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-3 gap-3 pt-4 border-t border-[#4a4455]/30 text-center">
+            <div class="p-2.5 rounded-lg bg-[#1d1a24]/60 border border-[#4a4455]/20">
+              <div class="text-[#4cd7f6] font-mono text-sm font-bold">16GB GDDR7</div>
+              <div class="text-[11px] text-gray-400 mt-0.5">28 Gbps Bandwidth</div>
+            </div>
+            <div class="p-2.5 rounded-lg bg-[#1d1a24]/60 border border-[#4a4455]/20">
+              <div class="text-[#d2bbff] font-mono text-sm font-bold">DLSS 4 & Ray Tracing</div>
+              <div class="text-[11px] text-gray-400 mt-0.5">Blackwell AI Tensor Core</div>
+            </div>
+            <div class="p-2.5 rounded-lg bg-[#1d1a24]/60 border border-[#4a4455]/20">
+              <div class="text-[#4ade80] font-mono text-sm font-bold">36-Month Warranty</div>
+              <div class="text-[11px] text-gray-400 mt-0.5">Full Official Coverage</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="hud-border glass-panel rounded-2xl p-4 bg-[#15121b]/80">
+            <!-- Hardware Preview Card -->
+            <div class="relative rounded-xl overflow-hidden bg-gradient-to-b from-[#221e28] to-[#100d16] border border-[#252D3A] p-6 text-center group">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#7c3aed] text-white text-[10px] font-bold tracking-wide">NEW GEN 2025</span>
+              <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80" 
+                alt="ASUS ROG RTX 5080 OC" 
+                class="w-full h-64 object-contain mx-auto group-hover:scale-105 transition-transform duration-500">
+              
+              <div class="mt-4 pt-4 border-t border-[#4a4455]/30 flex items-center justify-between text-xs">
+                <span class="text-gray-400">Under Full Load Thermals:</span>
+                <span class="text-[#4cd7f6] font-mono font-bold">58°C (Axial-Tech Triple Fan)</span>
+              </div>
+            </div>
+
+            <!-- Flash Sale Countdown Banner -->
+            <div class="mt-4 p-3.5 rounded-xl bg-gradient-to-r from-[#221e28] to-[#1d1a24] border border-[#7c3aed]/40 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-xl">⚡</span>
+                <div>
+                  <div class="text-xs font-bold text-white">Batch #1 Early Bird Sale</div>
+                  <div class="text-[10px] text-gray-400">Offer expires in:</div>
+                </div>
+              </div>
+
+              <!-- Timer Numbers -->
+              <div class="flex items-center gap-1.5 font-mono text-xs font-bold text-[#4cd7f6]">
+                <span id="timer-hours" class="bg-[#100d16] px-2 py-1 rounded border border-[#4a4455]/40">14</span>:
+                <span id="timer-minutes" class="bg-[#100d16] px-2 py-1 rounded border border-[#4a4455]/40">42</span>:
+                <span id="timer-seconds" class="bg-[#100d16] px-2 py-1 rounded border border-[#4a4455]/40 text-[#d2bbff]">18</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED HARDWARE GRID ================= -->
+  <section class="py-14 bg-[#100d16]/70 border-y border-[#252D3A]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="text-xs font-bold text-[#7c3aed] flex items-center gap-1">
+            <span class="w-1.5 h-1.5 bg-[#4cd7f6] rounded-full"></span>
+            Flagship Hardware Collection
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mt-1 font-display">Most Popular Components</h2>
+        </div>
+        <a href="products.html" class="text-xs font-bold text-[#4cd7f6] hover:text-[#38bdf8] flex items-center gap-1">
+          View Entire Hardware Catalog
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Product 1: RTX 4090 ROG Strix -->
+        <div class="hud-border glass-panel rounded-xl p-4 bg-[#15121b] flex flex-col justify-between glow-hover">
+          <div>
+            <div class="relative rounded-lg overflow-hidden bg-[#100d16] p-3 border border-[#252D3A] img-zoom">
+              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-[#7c3aed] text-white">24GB TITAN</span>
+              <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80" alt="RTX 4090 Strix" class="w-full h-40 object-cover rounded">
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-[#d2bbff] font-bold">ASUS ROG</span>
+              <h3 class="text-xs font-bold text-white line-clamp-2 mt-1 font-display">ASUS ROG Strix GeForce RTX 4090 24GB OC</h3>
+              <div class="text-[11px] text-gray-400 mt-1 line-clamp-1">24GB GDDR6X | Ada Lovelace Architecture</div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#4a4455]/30">
+            <div class="text-sm font-bold text-[#4cd7f6] font-mono">$1,999 USD</div>
+            <div class="grid grid-cols-2 gap-2 mt-3">
+              <button onclick="addToCart('gpu-rtx-4090-strix')" class="py-2 rounded-lg bg-[#7c3aed] hover:bg-[#9055ff] text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                + Cart
+              </button>
+              <button onclick="directTelegramProductOrder('gpu-rtx-4090-strix')" class="py-2 rounded-lg bg-[#24A1DE]/20 hover:bg-[#24A1DE] text-[#24A1DE] hover:text-white border border-[#24A1DE]/40 text-xs font-bold transition flex items-center justify-center gap-1">
+                Telegram
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Ryzen 7 7800X3D -->
+        <div class="hud-border glass-panel rounded-xl p-4 bg-[#15121b] flex flex-col justify-between glow-hover">
+          <div>
+            <div class="relative rounded-lg overflow-hidden bg-[#100d16] p-3 border border-[#252D3A] img-zoom">
+              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-[#4cd7f6] text-[#003640]">Top Gaming CPU</span>
+              <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=800&q=80" alt="Ryzen 7 7800X3D" class="w-full h-40 object-cover rounded">
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-[#d2bbff] font-bold">AMD Ryzen</span>
+              <h3 class="text-xs font-bold text-white line-clamp-2 mt-1 font-display">AMD Ryzen 7 7800X3D 3D V-Cache</h3>
+              <div class="text-[11px] text-gray-400 mt-1 line-clamp-1">8 Cores / 16 Threads | 104MB Cache | AM5</div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#4a4455]/30">
+            <div class="text-sm font-bold text-[#4cd7f6] font-mono">$449 USD</div>
+            <div class="grid grid-cols-2 gap-2 mt-3">
+              <button onclick="addToCart('cpu-ryzen-7800x3d')" class="py-2 rounded-lg bg-[#7c3aed] hover:bg-[#9055ff] text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                + Cart
+              </button>
+              <button onclick="directTelegramProductOrder('cpu-ryzen-7800x3d')" class="py-2 rounded-lg bg-[#24A1DE]/20 hover:bg-[#24A1DE] text-[#24A1DE] hover:text-white border border-[#24A1DE]/40 text-xs font-bold transition flex items-center justify-center gap-1">
+                Telegram
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Core i9-14900KS -->
+        <div class="hud-border glass-panel rounded-xl p-4 bg-[#15121b] flex flex-col justify-between glow-hover">
+          <div>
+            <div class="relative rounded-lg overflow-hidden bg-[#100d16] p-3 border border-[#252D3A] img-zoom">
+              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-[#7c3aed] text-white">6.2 GHz Binned</span>
+              <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=800&q=80" alt="Core i9 14900KS" class="w-full h-40 object-cover rounded">
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-[#d2bbff] font-bold">Intel Core i9</span>
+              <h3 class="text-xs font-bold text-white line-clamp-2 mt-1 font-display">Intel Core i9 14900KS Special Edition</h3>
+              <div class="text-[11px] text-gray-400 mt-1 line-clamp-1">24 Cores / 32 Threads | Turbo up to 6.2GHz</div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#4a4455]/30">
+            <div class="text-sm font-bold text-[#4cd7f6] font-mono">$669 USD</div>
+            <div class="grid grid-cols-2 gap-2 mt-3">
+              <button onclick="addToCart('cpu-i9-14900ks')" class="py-2 rounded-lg bg-[#7c3aed] hover:bg-[#9055ff] text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                + Cart
+              </button>
+              <button onclick="directTelegramProductOrder('cpu-i9-14900ks')" class="py-2 rounded-lg bg-[#24A1DE]/20 hover:bg-[#24A1DE] text-[#24A1DE] hover:text-white border border-[#24A1DE]/40 text-xs font-bold transition flex items-center justify-center gap-1">
+                Telegram
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Dominator Titanium 64GB -->
+        <div class="hud-border glass-panel rounded-xl p-4 bg-[#15121b] flex flex-col justify-between glow-hover">
+          <div>
+            <div class="relative rounded-lg overflow-hidden bg-[#100d16] p-3 border border-[#252D3A] img-zoom">
+              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-[#4ade80] text-black">DDR5 CL30</span>
+              <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80" alt="Corsair Dominator Titanium" class="w-full h-40 object-cover rounded">
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-[#d2bbff] font-bold">Corsair Titanium</span>
+              <h3 class="text-xs font-bold text-white line-clamp-2 mt-1 font-display">Corsair Dominator Titanium RGB 64GB DDR5 6000MHz</h3>
+              <div class="text-[11px] text-gray-400 mt-1 line-clamp-1">Low Latency CL30 | 2x32GB Dual Channel Kit</div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#4a4455]/30">
+            <div class="text-sm font-bold text-[#4cd7f6] font-mono">$309 USD</div>
+            <div class="grid grid-cols-2 gap-2 mt-3">
+              <button onclick="addToCart('ram-corsair-dominator-64gb')" class="py-2 rounded-lg bg-[#7c3aed] hover:bg-[#9055ff] text-white text-xs font-bold transition flex items-center justify-center gap-1">
+                + Cart
+              </button>
+              <button onclick="directTelegramProductOrder('ram-corsair-dominator-64gb')" class="py-2 rounded-lg bg-[#24A1DE]/20 hover:bg-[#24A1DE] text-[#24A1DE] hover:text-white border border-[#24A1DE]/40 text-xs font-bold transition flex items-center justify-center gap-1">
+                Telegram
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE PC BUILDER SECTION ================= -->
+  <section id="pc-builder-section" class="py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7c3aed]/20 border border-[#7c3aed]/40 text-xs text-[#d2bbff] mb-3">
+          <span class="w-2 h-2 rounded-full bg-[#4cd7f6]"></span>
+          NEXUS Intelligent PC Configurator
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-white font-display">Build Your Ultimate Gaming Battle Station</h2>
+        <p class="text-gray-400 text-xs sm:text-sm mt-2">
+          Select 100% compatible components, view real-time pricing updates, and send your final build directly to our engineers on Telegram for custom assembly.
+        </p>
+      </div>
+
+      <!-- Builder Interactive Interface -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left/Sidebar: Category Tabs -->
+        <div class="lg:col-span-3 space-y-2">
+          <div class="text-xs font-bold text-gray-400 px-1 mb-2">Build Components:</div>
+          <div id="builder-category-tabs" class="space-y-2">
+            <!-- Rendered by assets/js/pc-builder.js -->
+          </div>
+        </div>
+
+        <!-- Middle: Part Selection Area -->
+        <div class="lg:col-span-5 bg-[#15121b] border border-[#252D3A] rounded-2xl p-5">
+          <div class="flex items-center justify-between border-b border-[#4a4455]/30 pb-3 mb-4">
+            <h3 id="builder-active-category-title" class="text-sm font-bold text-white font-display">Select Component</h3>
+            <span class="text-xs text-[#4cd7f6] font-mono">100% Hardware Verified</span>
+          </div>
+
+          <!-- Items list container -->
+          <div id="builder-items-list" class="space-y-3 max-h-[500px] overflow-y-auto pl-1">
+            <!-- Rendered by assets/js/pc-builder.js -->
+          </div>
+        </div>
+
+        <!-- Right: Real-time Live Summary & Checkout -->
+        <div class="lg:col-span-4 hud-border glass-panel rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-[#4a4455]/40">
+              <span class="text-xs font-bold text-white flex items-center gap-1.5 font-display">
+                <svg class="w-4 h-4 text-[#7c3aed]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Configured Rig Summary
+              </span>
+              <span class="text-[10px] text-[#4ade80] px-2 py-0.5 rounded bg-[#4ade80]/10 border border-[#4ade80]/20">Thermal Tested</span>
+            </div>
+
+            <!-- Summary dynamic list -->
+            <div id="builder-summary-list" class="space-y-2 mt-4 max-h-[280px] overflow-y-auto pl-1">
+              <!-- Rendered by assets/js/pc-builder.js -->
+            </div>
+          </div>
+
+          <!-- Total & Actions -->
+          <div class="mt-6 pt-4 border-t border-[#4a4455]/40 space-y-4">
+            <div>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+                <span>Warranty & Build Care:</span>
+                <span id="builder-total-usd" class="font-mono text-xs text-[#d2bbff]">Included</span>
+              </div>
+              <div class="flex items-baseline justify-between mt-1">
+                <span class="text-xs text-white font-bold">Estimated Total:</span>
+                <span id="builder-total-toman" class="text-xl font-black text-[#4cd7f6] font-mono">$0 USD</span>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <button id="builder-order-telegram-btn" onclick="PC_BUILDER.orderBuildViaTelegram()" 
+                class="w-full py-3 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white text-xs font-bold shadow-lg shadow-[#24A1DE]/30 transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                Send Rig Config to Telegram Specialist
+              </button>
+
+              <button id="builder-add-all-cart-btn" onclick="PC_BUILDER.addAllToCart()" 
+                class="w-full py-2.5 rounded-xl bg-[#7c3aed]/20 hover:bg-[#7c3aed] text-[#d2bbff] hover:text-white border border-[#7c3aed]/40 text-xs font-bold transition flex items-center justify-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed">
+                Add All Selected to Cart
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PREBUILT BEAST SYSTEMS ================= -->
+  <section class="py-14 bg-[#100d16]/80 border-t border-[#252D3A]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-[#4cd7f6] uppercase tracking-wider">Ready to Dominate</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white mt-1 font-display">Factory Pre-Built Enthusiast Rigs</h2>
+        <p class="text-gray-400 text-xs mt-1">Stress-tested with 3DMark and Cinebench R24, custom cable management, zero bloatware.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- System 1 -->
+        <div class="hud-border glass-panel rounded-2xl p-6 bg-[#15121b] flex flex-col md:flex-row gap-6">
+          <div class="w-full md:w-52 flex-shrink-0 bg-[#100d16] rounded-xl p-3 border border-[#252D3A] flex flex-col items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80" alt="Quantum Beast PC" class="w-full h-44 object-cover rounded-lg">
+            <span class="mt-2 text-[11px] font-mono text-[#d2bbff] font-bold">ULTRA ENTHUSIAST</span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 class="text-base font-bold text-white font-display">QUANTUM BEAST 5080</h3>
+                <span class="text-xs font-bold text-[#4ade80]">Ready to Ship</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-1">Intel Core i9 14900KS | RTX 5080 16GB | 64GB DDR5</p>
+
+              <!-- FPS benchmarks -->
+              <div class="bg-[#100d16] p-2.5 rounded-lg border border-[#252D3A] mt-3 space-y-1 text-[11px]">
+                <div class="flex justify-between text-gray-300">
+                  <span>Cyberpunk 2077 (4K Ultra RT):</span>
+                  <span class="text-[#4cd7f6] font-mono font-bold">115 FPS</span>
+                </div>
+                <div class="flex justify-between text-gray-300">
+                  <span>Black Myth Wukong (4K Cinematic):</span>
+                  <span class="text-[#4cd7f6] font-mono font-bold">128 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-[#4a4455]/30 flex items-center justify-between">
+              <div>
+                <div class="text-[10px] text-gray-400">Complete Turnkey System:</div>
+                <div class="text-base font-bold text-[#4cd7f6] font-mono">$2,899 USD</div>
+              </div>
+              <a href="https://t.me/NexusPC_Support?text=Hi%2C%20I%20want%20to%20order%20the%20QUANTUM%20BEAST%205080%20Prebuilt%20Gaming%20PC." 
+                target="_blank"
+                class="px-4 py-2 rounded-lg bg-[#24A1DE] hover:bg-[#1b87be] text-white text-xs font-bold transition flex items-center gap-1.5">
+                Order via Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- System 2 -->
+        <div class="hud-border glass-panel rounded-2xl p-6 bg-[#15121b] flex flex-col md:flex-row gap-6">
+          <div class="w-full md:w-52 flex-shrink-0 bg-[#100d16] rounded-xl p-3 border border-[#252D3A] flex flex-col items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Cyber Phantom PC" class="w-full h-44 object-cover rounded-lg">
+            <span class="mt-2 text-[11px] font-mono text-[#4cd7f6] font-bold">PURE GAMING KING</span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 class="text-base font-bold text-white font-display">CYBER PHANTOM 7800X</h3>
+                <span class="text-xs font-bold text-[#4ade80]">Ready to Ship</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-1">AMD Ryzen 7 7800X3D | RX 7900 XTX 24GB | 32GB DDR5</p>
+
+              <!-- FPS benchmarks -->
+              <div class="bg-[#100d16] p-2.5 rounded-lg border border-[#252D3A] mt-3 space-y-1 text-[11px]">
+                <div class="flex justify-between text-gray-300">
+                  <span>CS2 / Valorant (Competitive 1440p):</span>
+                  <span class="text-[#4cd7f6] font-mono font-bold">550+ FPS</span>
+                </div>
+                <div class="flex justify-between text-gray-300">
+                  <span>Forza Horizon 5 (4K Extreme):</span>
+                  <span class="text-[#4cd7f6] font-mono font-bold">165 FPS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-[#4a4455]/30 flex items-center justify-between">
+              <div>
+                <div class="text-[10px] text-gray-400">Complete Turnkey System:</div>
+                <div class="text-base font-bold text-[#4cd7f6] font-mono">$1,999 USD</div>
+              </div>
+              <a href="https://t.me/NexusPC_Support?text=Hi%2C%20I%20want%20to%20order%20the%20CYBER%20PHANTOM%207800X%20Gaming%20PC." 
+                target="_blank"
+                class="px-4 py-2 rounded-lg bg-[#24A1DE] hover:bg-[#1b87be] text-white text-xs font-bold transition flex items-center gap-1.5">
+                Order via Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WHY NEXUS PC ADVANTAGES ================= -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="p-5 rounded-xl bg-[#1d1a24] border border-[#252D3A] text-left">
+          <div class="w-10 h-10 rounded-lg bg-[#7c3aed]/20 text-[#d2bbff] flex items-center justify-center text-lg mb-3">🛡️</div>
+          <h4 class="text-sm font-bold text-white font-display">100% Genuine Guaranteed</h4>
+          <p class="text-xs text-gray-400 mt-1 leading-relaxed">Factory-sealed components with verifiable serial numbers and official distributor warranties.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-[#1d1a24] border border-[#252D3A] text-left">
+          <div class="w-10 h-10 rounded-lg bg-[#4cd7f6]/20 text-[#4cd7f6] flex items-center justify-center text-lg mb-3">⚡</div>
+          <h4 class="text-sm font-bold text-white font-display">Precision Craft Assembly</h4>
+          <p class="text-xs text-gray-400 mt-1 leading-relaxed">Laser-level cable routing, optimized fan curves, and 24-hour stability thermal burn-in.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-[#1d1a24] border border-[#252D3A] text-left">
+          <div class="w-10 h-10 rounded-lg bg-[#24A1DE]/20 text-[#24A1DE] flex items-center justify-center text-lg mb-3">✈️</div>
+          <h4 class="text-sm font-bold text-white font-display">Instant Telegram Orders</h4>
+          <p class="text-xs text-gray-400 mt-1 leading-relaxed">Direct communication with lead hardware engineers for custom tuning and tracking.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-[#1d1a24] border border-[#252D3A] text-left">
+          <div class="w-10 h-10 rounded-lg bg-[#4ade80]/20 text-[#4ade80] flex items-center justify-center text-lg mb-3">📦</div>
+          <h4 class="text-sm font-bold text-white font-display">Shockproof Packaging</h4>
+          <p class="text-xs text-gray-400 mt-1 leading-relaxed">Double-boxed armored shipping with Instapak expanding foam GPU bracket protectors.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TELEGRAM CTA BANNER ================= -->
+  <section class="py-12 bg-gradient-to-r from-[#100d16] via-[#1a1528] to-[#100d16] border-y border-[#7c3aed]/30">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
+      <div class="inline-block p-3 rounded-2xl bg-[#24A1DE]/20 border border-[#24A1DE]/40 text-[#24A1DE] mb-1">
+        <svg class="w-8 h-8 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white font-display">Need Custom Configuration Advice?</h2>
+      <p class="text-gray-300 text-xs sm:text-sm max-w-xl mx-auto">
+        Share your targeted games, resolution, workflow requirements, or budget with our specialists for a tailored recommendation.
+      </p>
+      <div class="pt-2">
+        <a href="https://t.me/NexusPC_Support" target="_blank" 
+          class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white font-bold text-sm shadow-xl shadow-[#24A1DE]/40 transition telegram-pulse">
+          <span>Chat on Telegram (@NexusPC_Support)</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#100d16] border-t border-[#252D3A] pt-12 pb-8 mt-auto text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-left">
+        
+        <!-- Brand col -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 font-mono text-lg font-black text-white">
+            <span class="text-[#4cd7f6]">NEXUS</span>PC
+          </div>
+          <p class="text-gray-400 leading-relaxed text-[11px]">
+            Premier boutique PC builder and distributor of high-end gaming components, extreme cooling solutions, and workstations.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-xs mb-3 font-display">Quick Links</h4>
+          <ul class="space-y-2 text-[11px]">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Hardware Catalog</a></li>
+            <li><a href="#pc-builder-section" class="hover:text-white transition">Custom PC Configurator</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About NEXUS PC</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact & Telegram</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h4 class="text-white font-bold text-xs mb-3 font-display">Categories</h4>
+          <ul class="space-y-2 text-[11px]">
+            <li><a href="products.html?cat=gpu" class="hover:text-white transition">Graphics Cards (NVIDIA / AMD)</a></li>
+            <li><a href="products.html?cat=cpu" class="hover:text-white transition">Processors (Intel / Ryzen)</a></li>
+            <li><a href="products.html?cat=motherboard" class="hover:text-white transition">Motherboards (Z790 / X670E)</a></li>
+            <li><a href="products.html?cat=ram" class="hover:text-white transition">High-Speed DDR5 Memory</a></li>
+            <li><a href="products.html?cat=storage" class="hover:text-white transition">Gen 4/5 NVMe SSDs</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Address -->
+        <div>
+          <h4 class="text-white font-bold text-xs mb-3 font-display">Direct Contact</h4>
+          <ul class="space-y-2 text-[11px]">
+            <li class="flex items-center gap-2">
+              <span class="text-[#24A1DE]">Telegram:</span>
+              <a href="https://t.me/NexusPC_Support" class="text-gray-300 font-mono hover:text-white">@NexusPC_Support</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#4cd7f6]">Hotline:</span>
+              <span class="text-gray-300 font-mono">+1 (800) 555-NEXUS</span>
+            </li>
+            <li class="text-gray-400 leading-relaxed">
+              Silicon Valley Hardware Hub, Suite 1104, San Jose, CA
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-[#252D3A] flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px]">
+        <div>© 2025 NEXUS PC Hardware Labs. All rights reserved.</div>
+        <div class="text-gray-500 font-mono">Designed for Extreme Gaming Performance • English LTR</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING CART DRAWER ================= -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 hidden">
+    <div onclick="closeCartDrawer()" class="cart-drawer-overlay absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 transition-opacity"></div>
+    
+    <div class="cart-drawer-content absolute top-0 right-0 bottom-0 w-full max-w-md bg-[#15121b] border-l border-[#4a4455]/40 shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform z-10">
+      
+      <!-- Drawer Header -->
+      <div class="p-4 border-b border-[#4a4455]/30 flex items-center justify-between bg-[#1d1a24]">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-[#7c3aed]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <h3 class="text-sm font-bold text-white font-display">Your Shopping Cart</h3>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-gray-400 hover:text-white p-1" title="Close">✕</button>
+      </div>
+
+      <!-- Items List Container -->
+      <div class="flex-1 overflow-y-auto p-4 space-y-3">
+        <div id="cart-drawer-items" class="space-y-3">
+          <!-- Filled by JS -->
+        </div>
+
+        <div id="cart-drawer-empty" class="text-center py-16 hidden">
+          <div class="w-14 h-14 mx-auto rounded-full bg-[#221e28] flex items-center justify-center text-gray-500 mb-3 text-2xl">🛒</div>
+          <p class="text-xs text-gray-400">Your shopping cart is currently empty.</p>
+          <a href="products.html" onclick="closeCartDrawer()" class="inline-block mt-3 px-4 py-2 rounded-lg bg-[#7c3aed] text-white text-xs font-bold">Browse Catalog</a>
+        </div>
+      </div>
+
+      <!-- Drawer Checkout Footer -->
+      <div id="cart-drawer-checkout" class="p-4 bg-[#100d16] border-t border-[#4a4455]/30 space-y-3">
+        <div class="flex items-baseline justify-between">
+          <span class="text-xs text-gray-400">Cart Total:</span>
+          <div class="text-right">
+            <div id="cart-drawer-total" class="text-base font-bold text-[#4cd7f6] font-mono">$0 USD</div>
+            <div id="cart-drawer-total-usd" class="text-[10px] text-gray-500 font-mono">0 item(s)</div>
+          </div>
+        </div>
+
+        <button onclick="orderCartViaTelegram()" class="w-full py-3 rounded-xl bg-[#24A1DE] hover:bg-[#1b87be] text-white font-bold text-xs shadow-lg shadow-[#24A1DE]/30 transition flex items-center justify-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          Checkout via Telegram
+        </button>
+
+        <button onclick="clearCart()" class="w-full text-center text-[11px] text-gray-500 hover:text-red-400 transition py-1">
+          Clear Cart
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Vanilla Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/pc-builder.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
